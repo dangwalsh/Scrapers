@@ -74,9 +74,10 @@ while not office in offices:
     office = ''.join(i for i in office if not i in bad_chars)
 
 chrome_options = Options()
+chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--headless")
 driver = webdriver.Chrome(
-    executable_path='drivers/chromedriver.exe', 
+    executable_path='drivers/chromedriver', 
     options=chrome_options)
 driver.get(
     'http://' + office + '.web.gensler.com/office-information')
