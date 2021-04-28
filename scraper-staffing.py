@@ -76,10 +76,10 @@ while not office in offices:
 chrome_options = Options()
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--headless")
-chrome_options.binary_location = "C:\Program Files\Google\Chrome Beta\Application\chrome.exe"
+# chrome_options.binary_location = "C:\Program Files\Google\Chrome Beta\Application\chrome.exe"
 
 driver = webdriver.Chrome(
-    executable_path="C:\Presentations\drivers\chromedriver.exe", 
+    executable_path="drivers/chromedriver", 
     options=chrome_options)
 driver.get('http://' + office + '.web.gensler.com/office-information')
 

@@ -1,2 +1,4 @@
-Scripts/python.exe
-Scripts/pythonw.exe
+drivers/
+env/
+*.csv
+*.exe
